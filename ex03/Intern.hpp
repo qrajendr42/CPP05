@@ -3,10 +3,11 @@
 
 #include <string>
 #include <iostream>
-#include "AForm.hpp"
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
 #include "ShrubberyCreationForm.hpp"
+
+class Aform;
 
 class Intern
 {

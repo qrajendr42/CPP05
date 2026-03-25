@@ -5,8 +5,6 @@
 #include <string>
 #include <stdexcept>
 
-#include "AForm.hpp"
-
 class AForm;
 
 class Bureaucrat
