@@ -15,12 +15,12 @@ int main()
 
         Bureaucrat b2("333", 30);
         b2.signForm(f);
-        
+
         std::cout << f << std::endl;
     }
-    catch(const std::exception& e)
+    catch (std::exception &e)
     {
         std::cerr << "Exception: " << e.what() << std::endl;
     }
-    return (0);
+    return 0;
 }
