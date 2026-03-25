@@ -1,4 +1,5 @@
 #include "RobotomyRequestForm.hpp"
+#include "Bureaucrat.hpp"
 #include <cstdlib>
 #include <ctime>
 #include <iostream>
