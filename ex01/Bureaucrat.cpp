@@ -1,4 +1,5 @@
 #include "Bureaucrat.hpp"
+#include "Form.hpp"
 
 Bureaucrat::Bureaucrat(const std::string &name, int grade) : _name(name)
 {
@@ -57,7 +58,7 @@ void    Bureaucrat::signForm(Form &form)
     }
     catch (const std::exception &e)
     {
-        std::cout << getName() << " coudn't sign " << form.getName() << " because " << e.what() << std::endl;
+        std::cout << getName() << " couldn't sign " << form.getName() << " because " << e.what() << std::endl;
     }
 }
 
