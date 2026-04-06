@@ -5,11 +5,11 @@ int main()
 {
     try
     {
-        Bureaucrat b("111", 50);
-        Form f("222", 40, 30);
+        Bureaucrat b("111", 50); //declaring b
+        Form f("222", 40, 30); //sign check, cannot sign cuz no bureu declared
 
-        std::cout << b << std::endl; //declaring b
-        std::cout << f << std::endl; //sign check, cannot sign cuz no bureu declared
+        std::cout << b << std::endl;
+        std::cout << f << std::endl;
 
         b.signForm(f); //b sign check, should reject, cause too low
 
