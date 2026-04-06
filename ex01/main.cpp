@@ -8,13 +8,13 @@ int main()
         Bureaucrat b("111", 50);
         Form f("222", 40, 30);
 
-        std::cout << b << std::endl;
-        std::cout << f << std::endl;
+        std::cout << b << std::endl; //declaring b
+        std::cout << f << std::endl; //sign check, cannot sign cuz no bureu declared
 
-        b.signForm(f);
+        b.signForm(f); //b sign check, should reject, cause too low
 
-        Bureaucrat b2("333", 30);
-        b2.signForm(f);
+        Bureaucrat c("333", 30); //declaring c
+        c.signForm(f); //c sign check, should accept, cause fulfilled requirement
 
         std::cout << f << std::endl;
     }
