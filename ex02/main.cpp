@@ -9,9 +9,9 @@ int main()
     Bureaucrat  boss("Boss", 1);
     Bureaucrat  worker("Worker", 140);
 
-    ShrubberyCreationForm shrub("home");
-    RobotomyRequestForm robot("Gemini");
-    PresidentialPardonForm pardon("Ali");
+    ShrubberyCreationForm shrub("42KL");
+    RobotomyRequestForm robot("Meow");
+    PresidentialPardonForm pres("Ali");
 
     std::cout <<"\n--- ShrubberyCreationForm ---" << std::endl;
     worker.signForm(shrub); // succeed
@@ -23,8 +23,8 @@ int main()
     boss.executeForm(robot); // succeed
 
     std::cout << "\n--- PresidentialPardonForm ---" << std::endl;
-    boss.signForm(pardon); // succeed
-    boss.executeForm(pardon); // succeed
+    boss.signForm(pres); // succeed
+    boss.executeForm(pres); // succeed
 
     return (0);
 }
