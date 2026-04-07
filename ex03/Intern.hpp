@@ -7,7 +7,7 @@
 #include "PresidentialPardonForm.hpp"
 #include "ShrubberyCreationForm.hpp"
 
-class Aform;
+class AForm;
 
 class Intern
 {
