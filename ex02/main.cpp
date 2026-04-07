@@ -3,9 +3,13 @@
 #include "RobotomyRequestForm.hpp"
 #include "PresidentialPardonForm.hpp"
 #include <iostream>
+#include <cstdlib>
+#include <ctime>
 
 int main()
 {
+    std::srand(std::time(0));
+    
     Bureaucrat  boss("Boss", 1);
     Bureaucrat  worker("Worker", 140);
 
