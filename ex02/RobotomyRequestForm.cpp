@@ -7,12 +7,6 @@
 RobotomyRequestForm::RobotomyRequestForm(const std::string &target) : AForm("RobotomyRequestForm", 72, 45)
 {
     _target = target;
-    static bool seeded = false;
-    if (!seeded)
-    {
-        std::srand(std::time(0));
-        seeded = true;
-    }
 }
 
 RobotomyRequestForm::RobotomyRequestForm(const RobotomyRequestForm &copy) : AForm(copy)
