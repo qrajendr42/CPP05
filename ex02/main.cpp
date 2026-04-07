@@ -9,8 +9,8 @@ int main()
     Bureaucrat  boss("Boss", 1);
     Bureaucrat  worker("Worker", 140);
 
-    ShrubberyCreationForm shrub("42KL");
-    RobotomyRequestForm robot("Meow");
+    ShrubberyCreationForm shrub("home");
+    RobotomyRequestForm robot("Boom");
     PresidentialPardonForm pres("Ali");
 
     std::cout <<"\n--- ShrubberyCreationForm ---" << std::endl;
