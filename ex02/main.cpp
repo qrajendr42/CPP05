@@ -13,6 +13,9 @@ int main()
     RobotomyRequestForm robot("Boom");
     PresidentialPardonForm pres("Ali");
 
+    std::cout << "\n--- Execute without signing (should throw NotSignedException) ---" << std::endl;
+    boss.executeForm(shrub); // shrub is NOT signed yet, so it should fail here
+
     std::cout <<"\n--- ShrubberyCreationForm ---" << std::endl;
     worker.signForm(shrub); // succeed
     worker.executeForm(shrub); // fail - grade too low
